@@ -13,6 +13,7 @@
         	//设置类似验证码类似的session,假设有效时间为1分钟。
 		Session["time"] = DateTime.Now.ToString("yyyymmddHHMMss");
        		Session.Timeout = 1;
+		
 ###### 原因在于C#中只提供了session有效时间统一设置方法，无法对单个session进行有效时间进行设置。
 
 ###### 因此要在服务端对多个session分别设置有效时间就只能另辟蹊径，可以采用的方法大致分为两类：
@@ -20,9 +21,11 @@
 - 考虑使用redis等替代session功能，redis允许对特定键值对设置有效时间，方案2。该类型的方案较多，博客园各位大大都有文献介绍，所以本文重点不在这里。
 
 ###### 方案1：构建结构为：  
+
 		Tuple.Create<string, object, int>(key, value, time)
 		
 ###### 的tuple元组，将tuple写入Session中。写入时根据传入有效时间计算出过期时间，将过期时间存入，获取Session时判断是否已经超过过期截止时间，超过返回空，并且清空Session。
+
 		private void SetSingleSession(string key, object value, int? timeout)
 		{
 			int time = timeout ?? Session.Timeout;
@@ -30,6 +33,7 @@
 			var tuple = Tuple.Create(key, value, endTime);
 			Session[key] = tuple;
 		}
+		
         	private object GetSingleSession(string key)
         	{
             		var tuple = Session[key] as Tuple<string, object, DateTime>;
