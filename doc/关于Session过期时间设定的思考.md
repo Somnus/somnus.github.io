@@ -39,8 +39,8 @@
             		var tuple = Session[key] as Tuple<string, object, DateTime>;
             		var diff = DateTime.Compare(tuple.Item3, DateTime.Now);
             		object result = null;
-            		if (diff > 0) result = tuple.Item2;//有效时间截止之前正常返回值
-            		else Session.Remove(key);//超过有效时间清空Session
+            		if (diff > 0) result = tuple.Item2;
+            		else Session.Remove(key);
             		return result;
        		}
 	
@@ -59,20 +59,21 @@
 
 		public static class SessionHelper
 		{
-    		public static void AddWithTimeout(this HttpSessionStateBase session,string name,object value,int? minute)
-    		{
-			TimeSpan timeSpan=TimeSpan.FromMinutes(minute??session.TimeOut);
-			lock (session)
-        		{
-            			session[name] = value;
-        		}    
-        		Task.Delay(expireAfter).ContinueWith((task) => 
-			{
-            			lock (session)
-            			{
-                			session.Remove(name);
-            			}
-    			});
+    			public static void AddWithTimeout(this HttpSessionStateBase session,string name,object value,int? minute)
+    			{
+				TimeSpan timeSpan=TimeSpan.FromMinutes(minute??session.TimeOut);
+				lock (session)
+        			{
+            				session[name] = value;
+        			}    
+        			Task.Delay(expireAfter).ContinueWith((task) => 
+				{
+            				lock (session)
+            				{
+                				session.Remove(name);
+            				}
+    				});
+			}
 		}
 		
 ######  如果不是特别庞大的项目，推荐使用方案三，简单扩展方法即可实现，只需设置时使用Session扩展方法即可；对于比较大的项目，推荐使用方案2进行管理，毕竟Session机制由于服务器重启等原因会丢失，造成用户体验不佳。不推荐使用方案1，如果使用方案1设置和获取session都必须采用该扩展类进行，否则会存在过期但并未失效的情况。
