@@ -9,10 +9,10 @@
 		//写入用户登录状态到Session。
 		Session["state"] = "On";
 		//设置用户登录状态有效时间为1天，除非登录清空Session,否则整天登录状态有效。
-        Session.Timeout = 60 * 24;
-        //设置类似验证码类似的session,假设有效时间为1分钟。
+        	Session.Timeout = 60 * 24;
+        	//设置类似验证码类似的session,假设有效时间为1分钟。
 		Session["time"] = DateTime.Now.ToString("yyyymmddHHMMss");
-        Session.Timeout = 1;
+       		Session.Timeout = 1;
 ###### 原因在于C#中只提供了session有效时间统一设置方法，无法对单个session进行有效时间进行设置。
 
 ###### 因此要在服务端对多个session分别设置有效时间就只能另辟蹊径，可以采用的方法大致分为两类：
@@ -30,15 +30,15 @@
 			var tuple = Tuple.Create(key, value, endTime);
 			Session[key] = tuple;
 		}
-        private object GetSingleSession(string key)
-        {
-            var tuple = Session[key] as Tuple<string, object, DateTime>;
-            var diff = DateTime.Compare(tuple.Item3, DateTime.Now);
-            object result = null;
-            if (diff > 0) result = tuple.Item2;//有效时间截止之前正常返回值
-            else Session.Remove(key);//超过有效时间清空Session
-            return result;
-        }
+        	private object GetSingleSession(string key)
+        	{
+            		var tuple = Session[key] as Tuple<string, object, DateTime>;
+            		var diff = DateTime.Compare(tuple.Item3, DateTime.Now);
+            		object result = null;
+            		if (diff > 0) result = tuple.Item2;//有效时间截止之前正常返回值
+            		else Session.Remove(key);//超过有效时间清空Session
+            		return result;
+       		}
 	
 ###### 方案2：使用Redis。
 - 安装redis服务。windows版：[下载](https://github.com/MicrosoftArchive/redis/releases)，下载安装包并点击安装，直到安装完成。
@@ -47,9 +47,9 @@
 - redis使用，基础代码如下。
 
 		ConnectionMultiplexer redis = ConnectionMultiplexer.Connect("localhost:6379,password=fxy123");
-        IDatabase db = redis.GetDatabase();
-        //写入记录，包括有效时间：10秒过期
-        db.StringSet ( "key_test" , "shaocan",TimeSpan.FromSeconds(10));
+        	IDatabase db = redis.GetDatabase();
+        	//写入记录，包括有效时间：10秒过期
+        	db.StringSet ( "key_test" , "shaocan",TimeSpan.FromSeconds(10));
 	
 ###### 方案3：通过扩展Session类，设置一个异步延迟执行机制，定时清除session。(原始文献参考[ASP.NET Session: Caching Expiring Values](https://www.jitbit.com/alexblog/196-aspnet-session-caching-expiring-values/))
 
@@ -62,13 +62,13 @@
         		{
             			session[name] = value;
         		}    
-        		Task.Delay(expireAfter).ContinueWith((task) => {
+        		Task.Delay(expireAfter).ContinueWith((task) => 
+			{
             			lock (session)
             			{
                 			session.Remove(name);
             			}
-        			});
-    			}
+    			});
 		}
 		
 ######  如果不是特别庞大的项目，推荐使用方案三，简单扩展方法即可实现，只需设置时使用Session扩展方法即可；对于比较大的项目，推荐使用方案2进行管理，毕竟Session机制由于服务器重启等原因会丢失，造成用户体验不佳。不推荐使用方案1，如果使用方案1设置和获取session都必须采用该扩展类进行，否则会存在过期但并未失效的情况。
