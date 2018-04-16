@@ -21,6 +21,7 @@
 
 ###### 方案1：构建结构为：  
 		Tuple.Create<string, object, int>(key, value, time)
+		
 ###### 的tuple元组，将tuple写入Session中。写入时根据传入有效时间计算出过期时间，将过期时间存入，获取Session时判断是否已经超过过期截止时间，超过返回空，并且清空Session。
 		private void SetSingleSession(string key, object value, int? timeout)
 		{
@@ -55,18 +56,18 @@
 		{
     		public static void AddWithTimeout(this HttpSessionStateBase session,string name,object value,int? minute)
     		{
-				TimeSpan timeSpan=TimeSpan.FromMinutes(minute??session.TimeOut);
-				lock (session)
+			TimeSpan timeSpan=TimeSpan.FromMinutes(minute??session.TimeOut);
+			lock (session)
         		{
-            		session[name] = value;
+            			session[name] = value;
         		}    
         		Task.Delay(expireAfter).ContinueWith((task) => {
-            		lock (session)
-            		{
-                		session.Remove(name);
-            		}
-        		});
-    		}
+            			lock (session)
+            			{
+                			session.Remove(name);
+            			}
+        			});
+    			}
 		}
 
 ######　　如果不是特别庞大的项目，推荐使用方案三，简单扩展方法即可实现，只需设置时使用Session扩展方法即可；对于比较大的项目，推荐使用方案2进行管理，毕竟Session机制由于服务器重启等原因会丢失，造成用户体验不佳。不推荐使用方案1，如果使用方案1设置和获取session都必须采用该扩展类进行，否则会存在过期但并未失效的情况。
