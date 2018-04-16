@@ -51,7 +51,7 @@
         //写入记录，包括有效时间：10秒过期
         db.StringSet ( "key_test" , "shaocan",TimeSpan.FromSeconds(10));
 	
-###### 方案3：通过扩展Session类，设置一个异步延迟执行机制，定时清除session。(原始文献参考ASP.NET Session: Caching Expiring Values)
+###### 方案3：通过扩展Session类，设置一个异步延迟执行机制，定时清除session。(原始文献参考[ASP.NET Session: Caching Expiring Values](https://www.jitbit.com/alexblog/196-aspnet-session-caching-expiring-values/))
 
 		public static class SessionHelper
 		{
