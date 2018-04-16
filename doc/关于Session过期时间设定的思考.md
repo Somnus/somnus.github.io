@@ -18,6 +18,7 @@
 ###### 因此要在服务端对多个session分别设置有效时间就只能另辟蹊径，可以采用的方法大致分为两类：
 - 基于session机制进行扩展，通过扩展方法实现，即方案1和方案3。目前并没有从博客园或者相关文献中找到方案，唯一找到的参考资料方案3中有提及。
 - 考虑使用redis等替代session功能，redis允许对特定键值对设置有效时间，方案2。该类型的方案较多，博客园各位大大都有文献介绍，所以本文重点不在这里。
+
 ###### 方案1：构建结构为：  
 		Tuple.Create<string, object, int>(key, value, time)
 ###### 的tuple元组，将tuple写入Session中。写入时根据传入有效时间计算出过期时间，将过期时间存入，获取Session时判断是否已经超过过期截止时间，超过返回空，并且清空Session。
@@ -37,6 +38,7 @@
             else Session.Remove(key);//超过有效时间清空Session
             return result;
         }
+	
 ###### 方案2：使用Redis。
 - 安装redis服务。windows版：[下载](https://github.com/MicrosoftArchive/redis/releases)，下载安装包并点击安装，直到安装完成。
 - 设置登录密码，打开cmd窗口，输入“cd C:\Program Files\redis”进入redis安装目录，输入“redis-cli.exe”运行该exe程序，继续输入 “config pass requirepass password”（password改为要设置的登录密码），完成密码设置。
@@ -47,6 +49,7 @@
         IDatabase db = redis.GetDatabase();
         //写入记录，包括有效时间：10秒过期
         db.StringSet ( "key_test" , "shaocan",TimeSpan.FromSeconds(10));
+	
 ###### 方案3：通过扩展Session类，设置一个异步延迟执行机制，定时清除session。(原始文献参考ASP.NET Session: Caching Expiring Values)
 		public static class SessionHelper
 		{
