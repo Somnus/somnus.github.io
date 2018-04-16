@@ -57,23 +57,20 @@
 	
 ###### 方案3：通过扩展Session类，设置一个异步延迟执行机制，定时清除session。(原始文献参考[ASP.NET Session: Caching Expiring Values](https://www.jitbit.com/alexblog/196-aspnet-session-caching-expiring-values/))
 
-		public static class SessionHelper
-		{
-    			public static void AddWithTimeout(this HttpSessionStateBase session,string name,object value,int? minute)
-    			{
-				TimeSpan timeSpan=TimeSpan.FromMinutes(minute??session.TimeOut);
-				lock (session)
-        			{
-            				session[name] = value;
-        			}    
-        			Task.Delay(expireAfter).ContinueWith((task) => 
-				{
-            				lock (session)
-            				{
-                				session.Remove(name);
-            				}
-    				});
-			}
+    		public static void AddWithTimeout(this HttpSessionStateBase session,string name,object value,int? minute)
+    		{
+			TimeSpan timeSpan=TimeSpan.FromMinutes(minute??session.TimeOut);
+			lock (session)
+        		{
+            			session[name] = value;
+        		}    
+        		Task.Delay(expireAfter).ContinueWith((task) => 
+			{
+            			lock (session)
+            			{
+                			session.Remove(name);
+            			}
+    			});
 		}
 		
 ######  如果不是特别庞大的项目，推荐使用方案三，简单扩展方法即可实现，只需设置时使用Session扩展方法即可；对于比较大的项目，推荐使用方案2进行管理，毕竟Session机制由于服务器重启等原因会丢失，造成用户体验不佳。不推荐使用方案1，如果使用方案1设置和获取session都必须采用该扩展类进行，否则会存在过期但并未失效的情况。
