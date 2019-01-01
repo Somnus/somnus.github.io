@@ -28,7 +28,7 @@
 	rpm -ivh mysql-community-release-el7-5.noarch.rpm
 	yum install mysql-community-server
 
-### 启动mysql
+### 启动MySQL
 	service mysqld restart
 
 ### 登录数据库
