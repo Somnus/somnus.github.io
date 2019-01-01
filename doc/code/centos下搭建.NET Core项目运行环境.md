@@ -1,14 +1,14 @@
 
 # **centos下搭建.NET Core项目运行环境** #
 
-- 系统版本：centos 7.3
+- 系统版本：CentOS 7.3
 - 运行环境：.NET Core
 - 数据库：MySQL
-- 进程守护：supervisor
+- 进程守护：Supervisor
 
 
 ## .NET Core环境
-### 安装centos中netcore依赖库
+### 安装centos中.NET Core依赖库
 	yum install libunwind
 	yum install libicu 
 
@@ -22,7 +22,7 @@
 	sudo yum install dotnet-sdk-2.2
 
 
-## mysql数据库
+## MySQL数据库
 ### 获取安装包并完成安装
 	wget http://dev.mysql.com/get/mysql-community-release-el7-5.noarch.rpm
 	rpm -ivh mysql-community-release-el7-5.noarch.rpm
@@ -45,12 +45,12 @@
 
 
 ## 进程守护
-### 安装 Supervisor 及配置 Supervisor
+### 安装Supervisor
 	yum install python-setuptools
 	easy_install supervisor
 	mkdir /etc/supervisor
 	echo_supervisord_conf > /etc/supervisor/supervisord.conf
-### 配置supervisor
+### 配置Supervisor
 - 打开```/etc/supervisor/supervisord.conf```文件,将
 
 		;[include]
@@ -99,7 +99,7 @@
 		systemctl enable supervisord  
 		systemctl is-enabled supervisord #来验证是否为开机启动
 
-- 启动supervisor
+- 启动Supervisor
 
 		supervisorctl start netcore
 
