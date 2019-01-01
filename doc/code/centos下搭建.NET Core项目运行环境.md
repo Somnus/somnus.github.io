@@ -1,5 +1,5 @@
 
-# **centos下搭建.NET Core项目运行环境** #
+# **CentOS下搭建.NET Core项目运行环境** #
 
 - 系统版本：CentOS 7.3
 - 运行环境：.NET Core
@@ -8,7 +8,7 @@
 
 
 ## .NET Core环境
-### 安装centos中.NET Core依赖库
+### 安装CentOS中.NET Core依赖库
 	yum install libunwind
 	yum install libicu 
 
