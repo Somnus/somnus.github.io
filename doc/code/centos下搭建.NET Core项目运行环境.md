@@ -41,7 +41,7 @@
 	grant all privileges on *.* to root@'%'identified by 'password';
 
 ### 大小写不敏感设置
-- 编辑```/etc/my.cnf```文件,在```[mysqld]```节下 添加 ```lower_case_table_names=1``` 参数,重启mysql才生效。
+- 编辑```/etc/my.cnf```文件,在```[mysqld]```节下 添加 ```lower_case_table_names=1``` 参数,重启MySQL才生效。
 
 
 ## 进程守护
@@ -106,5 +106,5 @@
 
 ##参考资料
 - 微软官方教程：[http://https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial](http://https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial "微软官方教程")
-- ASP.NET Core 发布 centos7 配置守护进程：[https://www.cnblogs.com/mhq-martin/p/8639166.html](https://www.cnblogs.com/mhq-martin/p/8639166.html "ASP.NET Core 发布 centos7 配置守护进程")
-- centos7 mysql数据库安装和配置：[https://www.cnblogs.com/starof/p/4680083.html](https://www.cnblogs.com/starof/p/4680083.html "centos7 mysql数据库安装和配置")
+- ASP.NET Core 发布 CentOS 7 配置守护进程：[https://www.cnblogs.com/mhq-martin/p/8639166.html](https://www.cnblogs.com/mhq-martin/p/8639166.html "ASP.NET Core 发布 centos7 配置守护进程")
+- CentOS 7 MySQL数据库安装和配置：[https://www.cnblogs.com/starof/p/4680083.html](https://www.cnblogs.com/starof/p/4680083.html "centos7 mysql数据库安装和配置")
