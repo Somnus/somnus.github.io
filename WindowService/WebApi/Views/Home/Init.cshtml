@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "Init";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<div>
+    @foreach(string item in ViewBag.Logs)
+    {
+        <h4>@item</h4>
+    }
+</div>
+

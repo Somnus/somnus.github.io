@@ -35,7 +35,7 @@ echo wscript.sleep 500>sleep.vbs
 @start /wait sleep.vbs
 @del /f /s /q sleep.vbs>nul
 
-nssm stop %serviceName%
+::nssm stop %serviceName%
 
 
 
