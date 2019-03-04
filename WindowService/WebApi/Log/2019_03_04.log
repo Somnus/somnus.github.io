@@ -23001,3 +23001,1404 @@
    at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
    at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
 23:44:45.694  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 35320 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:44:48.208  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:44:48.209  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:44:48.210  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:44:48.210  1 N - Framework.Website.API 
+23:44:48.213  1 N - 可用服务10个：
+23:44:48.219  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:44:48.219  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:44:48.219  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:48.219  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:48.219  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:48.219  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:48.219  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:48.219  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:48.219  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:48.219  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:48.239 12 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:44:48.418  8 Y - Register/Login<="ok"
+23:44:48.705  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:44:48.807  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 20576 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:44:51.178  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:44:51.180  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:44:51.180  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:44:51.180  1 N - Framework.Website.API 
+23:44:51.183  1 N - 可用服务10个：
+23:44:51.188  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:44:51.189  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:44:51.189  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:51.189  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:51.189  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:51.189  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:51.189  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:51.189  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:51.189  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:51.189  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:51.209 13 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:44:51.358 10 Y - Register/Login<="ok"
+23:44:51.693  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:44:51.800  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 32048 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:44:54.431  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:44:54.433  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:44:54.433  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:44:54.433  1 N - Framework.Website.API 
+23:44:54.438  1 N - 可用服务10个：
+23:44:54.446  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:44:54.447  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:44:54.447  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:54.447  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:54.447  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:54.447  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:54.447  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:54.447  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:54.447  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:54.447  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:54.468  5 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:44:54.639  7 Y - Register/Login<="ok"
+23:44:54.959  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:44:55.064  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 4504 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:44:57.591  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:44:57.593  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:44:57.593  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:44:57.593  1 N - Framework.Website.API 
+23:44:57.598  1 N - 可用服务10个：
+23:44:57.604  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:44:57.604  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:44:57.604  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:57.604  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:57.604  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:57.604  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:57.604  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:57.604  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:57.604  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:57.604  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:44:57.624 10 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:44:57.780  9 Y - Register/Login<="ok"
+23:44:58.116  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:44:58.247  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 21348 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:45:00.956  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:45:00.958  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:45:00.958  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:45:00.959  1 N - Framework.Website.API 
+23:45:00.963  1 N - 可用服务10个：
+23:45:00.968  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:45:00.969  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:45:00.969  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:00.969  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:00.969  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:00.969  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:00.969  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:00.969  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:00.969  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:00.969  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:00.991  7 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:45:01.160  9 Y - Register/Login<="ok"
+23:45:01.469  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:45:01.578  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 5624 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:45:04.021  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:45:04.023  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:45:04.024  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:45:04.024  1 N - Framework.Website.API 
+23:45:04.028  1 N - 可用服务10个：
+23:45:04.035  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:45:04.036  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:45:04.036  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:04.036  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:04.036  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:04.036  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:04.036  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:04.036  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:04.036  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:04.036  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:04.062  6 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:45:04.230 14 Y - Register/Login<="ok"
+23:45:04.519  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:45:04.621  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 1592 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:45:07.094  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:45:07.095  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:45:07.096  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:45:07.096  1 N - Framework.Website.API 
+23:45:07.101  1 N - 可用服务10个：
+23:45:07.108  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:45:07.109  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:45:07.109  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:07.109  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:07.109  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:07.109  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:07.109  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:07.109  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:07.109  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:07.109  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:07.133  6 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:45:07.293 10 Y - Register/Login<="ok"
+23:45:07.591  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:45:07.695  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 33784 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:45:10.089  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:45:10.091  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:45:10.091  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:45:10.091  1 N - Framework.Website.API 
+23:45:10.096  1 N - 可用服务10个：
+23:45:10.103  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:45:10.104  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:45:10.104  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:10.104  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:10.104  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:10.104  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:10.104  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:10.104  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:10.104  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:10.104  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:10.126  8 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:45:10.288 13 Y - Register/Login<="ok"
+23:45:10.588  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:45:10.692  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 20388 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:45:13.069  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:45:13.070  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:45:13.070  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:45:13.070  1 N - Framework.Website.API 
+23:45:13.073  1 N - 可用服务10个：
+23:45:13.078  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:45:13.079  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:45:13.079  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:13.079  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:13.079  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:13.079  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:13.079  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:13.079  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:13.079  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:13.079  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:13.101 11 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:45:13.263  7 Y - Register/Login<="ok"
+23:45:13.552  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:45:13.646  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 33460 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:45:16.031  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:45:16.033  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:45:16.033  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:45:16.034  1 N - Framework.Website.API 
+23:45:16.039  1 N - 可用服务10个：
+23:45:16.048  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:45:16.050  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:45:16.050  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:16.050  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:16.050  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:16.050  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:16.050  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:16.050  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:16.050  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:16.050  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:16.078  6 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:45:16.254 10 Y - Register/Login<="ok"
+23:45:16.570  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:45:16.674  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 10120 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:45:19.190  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:45:19.191  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:45:19.192  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:45:19.192  1 N - Framework.Website.API 
+23:45:19.196  1 N - 可用服务10个：
+23:45:19.202  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:45:19.203  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:45:19.203  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:19.203  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:19.203  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:19.203  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:19.203  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:19.203  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:19.203  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:19.203  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:19.225  8 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:45:19.409 10 Y - Register/Login<="ok"
+23:45:19.736  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:45:19.848  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 24612 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:45:22.250  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:45:22.252  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:45:22.252  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:45:22.252  1 N - Framework.Website.API 
+23:45:22.255  1 N - 可用服务10个：
+23:45:22.261  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:45:22.262  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:45:22.262  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:22.262  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:22.262  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:22.262  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:22.262  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:22.262  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:22.262  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:22.262  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:22.283  7 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:45:22.447 12 Y - Register/Login<="ok"
+23:45:22.746  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:45:22.841  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 34052 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:45:25.233  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:45:25.235  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:45:25.235  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:45:25.235  1 N - Framework.Website.API 
+23:45:25.240  1 N - 可用服务10个：
+23:45:25.245  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:45:25.245  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:45:25.245  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:25.246  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:25.246  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:25.246  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:25.246  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:25.246  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:25.246  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:25.246  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:25.267  6 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:45:25.428 12 Y - Register/Login<="ok"
+23:45:25.730  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:45:25.833  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 27732 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:45:28.242  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:45:28.244  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:45:28.244  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:45:28.244  1 N - Framework.Website.API 
+23:45:28.248  1 N - 可用服务10个：
+23:45:28.255  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:45:28.255  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:45:28.255  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:28.255  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:28.255  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:28.255  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:28.255  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:28.255  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:28.255  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:28.255  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:28.276  8 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:45:28.447  7 Y - Register/Login<="ok"
+23:45:28.783  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:45:28.918  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 35244 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:45:31.580  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:45:31.582  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:45:31.582  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:45:31.582  1 N - Framework.Website.API 
+23:45:31.586  1 N - 可用服务10个：
+23:45:31.592  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:45:31.593  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:45:31.593  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:31.593  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:31.593  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:31.593  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:31.593  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:31.593  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:31.593  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:31.593  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:31.617  6 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:45:31.781 10 Y - Register/Login<="ok"
+23:45:32.140  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:45:32.243  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 31052 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:45:34.771  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:45:34.772  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:45:34.772  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:45:34.773  1 N - Framework.Website.API 
+23:45:34.776  1 N - 可用服务10个：
+23:45:34.782  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:45:34.782  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:45:34.783  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:34.783  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:34.783  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:34.783  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:34.783  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:34.783  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:34.783  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:34.783  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:34.803  9 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:45:34.960 13 Y - Register/Login<="ok"
+23:45:35.281  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:45:35.389  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 26728 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:45:37.758  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:45:37.759  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:45:37.759  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:45:37.759  1 N - Framework.Website.API 
+23:45:37.763  1 N - 可用服务10个：
+23:45:37.768  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:45:37.768  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:45:37.768  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:37.768  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:37.768  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:37.768  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:37.768  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:37.768  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:37.768  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:37.768  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:37.789 11 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:45:37.945 10 Y - Register/Login<="ok"
+23:45:38.273  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:45:38.370  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 27760 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:45:41.151  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:45:41.153  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:45:41.153  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:45:41.154  1 N - Framework.Website.API 
+23:45:41.158  1 N - 可用服务10个：
+23:45:41.166  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:45:41.167  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:45:41.167  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:41.167  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:41.167  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:41.167  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:41.167  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:41.167  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:41.167  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:41.167  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:41.194  9 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:45:41.357 13 Y - Register/Login<="ok"
+23:45:41.643  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:45:41.753  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 35104 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:45:44.258  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:45:44.259  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:45:44.260  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:45:44.260  1 N - Framework.Website.API 
+23:45:44.263  1 N - 可用服务10个：
+23:45:44.268  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:45:44.268  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:45:44.268  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:44.268  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:44.268  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:44.268  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:44.268  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:44.268  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:44.268  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:44.268  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:44.289  6 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:45:44.439  7 Y - Register/Login<="ok"
+23:45:44.741  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:45:44.845  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 19112 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:45:47.238  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:45:47.240  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:45:47.240  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:45:47.240  1 N - Framework.Website.API 
+23:45:47.244  1 N - 可用服务10个：
+23:45:47.250  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:45:47.252  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:45:47.252  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:47.252  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:47.252  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:47.252  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:47.252  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:47.252  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:47.252  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:47.252  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:47.272  9 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:45:47.424  5 Y - Register/Login<="ok"
+23:45:47.711  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:45:47.815  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 26792 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:45:50.176  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:45:50.178  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:45:50.178  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:45:50.178  1 N - Framework.Website.API 
+23:45:50.183  1 N - 可用服务10个：
+23:45:50.192  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:45:50.193  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:45:50.193  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:50.193  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:50.193  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:50.193  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:50.193  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:50.193  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:50.193  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:50.193  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:50.219  8 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:45:50.396  7 Y - Register/Login<="ok"
+23:45:50.709  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:45:50.813  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 27244 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:45:53.222  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:45:53.223  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:45:53.223  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:45:53.223  1 N - Framework.Website.API 
+23:45:53.227  1 N - 可用服务10个：
+23:45:53.233  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:45:53.233  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:45:53.233  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:53.233  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:53.233  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:53.233  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:53.233  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:53.233  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:53.233  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:53.233  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:53.254  5 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:45:53.424  7 Y - Register/Login<="ok"
+23:45:53.713  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:45:53.807  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 14028 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:45:56.320  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:45:56.321  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:45:56.321  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:45:56.321  1 N - Framework.Website.API 
+23:45:56.325  1 N - 可用服务10个：
+23:45:56.330  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:45:56.331  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:45:56.331  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:56.331  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:56.331  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:56.331  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:56.331  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:56.331  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:56.331  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:56.331  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:56.350  9 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:45:56.514 10 Y - Register/Login<="ok"
+23:45:56.839  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:45:56.948  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 32564 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:45:59.243  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:45:59.244  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:45:59.244  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:45:59.244  1 N - Framework.Website.API 
+23:45:59.248  1 N - 可用服务10个：
+23:45:59.254  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:45:59.255  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:45:59.255  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:59.255  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:59.255  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:59.255  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:59.255  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:59.255  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:59.255  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:59.255  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:45:59.276  9 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:45:59.442  6 Y - Register/Login<="ok"
+23:45:59.775  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:45:59.886  1 N - 异常退出！
+
+#Software: Framework.Website.API
+#ProcessID: 27784 x64
+#AppDomain: Framework.Website.API
+#FileName: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.exe
+#BaseDirectory: D:\git\somnus.github.io\WindowService\WebApi\
+#CommandLine: D:\git\somnus.github.io\WindowService\WebApi\Framework.Website.API.dll
+#ApplicationType: Console
+#CLR: 4.0.30319.42000, 
+#OS: Microsoft Windows NT 6.2.9200.0, LAPTOP-DOT68I1Q/LAPTOP-DOT68I1Q$
+#CPU: 8
+#GC: IsServerGC=True, LatencyMode=Interactive
+#Date: 2019-03-04
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+23:46:02.422  1 N - NewLife.Core v8.0.2019.0101 Build 2019-01-26 23:22:36 
+23:46:02.424  1 N - 新生命X组件核心库 ©2002-2019 新生命开发团队
+23:46:02.424  1 N - Framework.Website.API v1.0.0.0 Build 2000-01-01 
+23:46:02.424  1 N - Framework.Website.API 
+23:46:02.427  1 N - 可用服务10个：
+23:46:02.432  1 N - 	Api/All               String[] All()	NewLife.Remoting.ApiController
+23:46:02.433  1 N - 	Api/Info              Object Info(String state)	NewLife.Remoting.ApiController
+23:46:02.433  1 N - 	Dishes/GetDishesType  Object GetDishesType()	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:46:02.433  1 N - 	Dishes/GetDishesList  Object GetDishesList(String dishetype, String keyword, Nullable`1 type)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:46:02.433  1 N - 	Basic/GetOptionnote   Object GetOptionnote(Int32 typecode)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:46:02.433  1 N - 	Basic/GetStore        Object GetStore(String storeid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:46:02.433  1 N - 	Table/GetTableOne     Object GetTableOne(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:46:02.433  1 N - 	Order/InsertOrder     Object InsertOrder(Object model)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:46:02.433  1 N - 	Order/GetOrderDetails Object GetOrderDetails(String tableid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:46:02.433  1 N - 	Order/GetSettlement   Object GetSettlement(String tableid, String userid, String eqid)	Framework.Website.API.Auxiliary.ThirdPartyOrderAuxiliary
+23:46:02.453  5 Y - Register/Login=>{"storeid":"6b9e9f18-dc95-407b-b426-028758a2dc72"}
+23:46:02.641  8 Y - Register/Login<="ok"
+23:46:02.922  1 N - System.IO.IOException: Failed to bind to address http://[::]:8088: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__23`1.MoveNext()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.<StartAsync>d__26.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__5.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.<RunAsync>d__4.MoveNext()
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Framework.Website.API.Program.Main(String[] args) in C:\Users\fxy75\Downloads\Pos2.0_dev_card\Framework.Website.API\Program.cs:line 24
+23:46:03.022  1 N - 异常退出！
+
