@@ -1,0 +1,14 @@
+D:\git\somnus.github.io\AspNetCoreLearn\AspNetCoreLearn\bin\Debug\netcoreapp2.1\AspNetCoreLearn.deps.json
+D:\git\somnus.github.io\AspNetCoreLearn\AspNetCoreLearn\bin\Debug\netcoreapp2.1\AspNetCoreLearn.runtimeconfig.json
+D:\git\somnus.github.io\AspNetCoreLearn\AspNetCoreLearn\bin\Debug\netcoreapp2.1\AspNetCoreLearn.runtimeconfig.dev.json
+D:\git\somnus.github.io\AspNetCoreLearn\AspNetCoreLearn\bin\Debug\netcoreapp2.1\AspNetCoreLearn.dll
+D:\git\somnus.github.io\AspNetCoreLearn\AspNetCoreLearn\bin\Debug\netcoreapp2.1\AspNetCoreLearn.pdb
+D:\git\somnus.github.io\AspNetCoreLearn\AspNetCoreLearn\obj\Debug\netcoreapp2.1\AspNetCoreLearn.csprojAssemblyReference.cache
+D:\git\somnus.github.io\AspNetCoreLearn\AspNetCoreLearn\obj\Debug\netcoreapp2.1\AspNetCoreLearn.csproj.CoreCompileInputs.cache
+D:\git\somnus.github.io\AspNetCoreLearn\AspNetCoreLearn\obj\Debug\netcoreapp2.1\AspNetCoreLearn.RazorAssemblyInfo.cache
+D:\git\somnus.github.io\AspNetCoreLearn\AspNetCoreLearn\obj\Debug\netcoreapp2.1\AspNetCoreLearn.RazorAssemblyInfo.cs
+D:\git\somnus.github.io\AspNetCoreLearn\AspNetCoreLearn\obj\Debug\netcoreapp2.1\AspNetCoreLearn.AssemblyInfoInputs.cache
+D:\git\somnus.github.io\AspNetCoreLearn\AspNetCoreLearn\obj\Debug\netcoreapp2.1\AspNetCoreLearn.AssemblyInfo.cs
+D:\git\somnus.github.io\AspNetCoreLearn\AspNetCoreLearn\obj\Debug\netcoreapp2.1\AspNetCoreLearn.RazorTargetAssemblyInfo.cache
+D:\git\somnus.github.io\AspNetCoreLearn\AspNetCoreLearn\obj\Debug\netcoreapp2.1\AspNetCoreLearn.dll
+D:\git\somnus.github.io\AspNetCoreLearn\AspNetCoreLearn\obj\Debug\netcoreapp2.1\AspNetCoreLearn.pdb
