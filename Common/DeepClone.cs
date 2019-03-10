@@ -1,6 +1,13 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq.Expressions;
+using System.Reflection;
+using System.Text;
+using System.Xml.Serialization;
 
-namespace DeepClone.cs
+namespace Framework.NetCore.FXYClass
 {
     /// <summary>
     /// a class that use to deep clone instance.
@@ -68,12 +75,12 @@ namespace DeepClone.cs
         }
 
         /// <summary>
-        ///  provide a method to deep clone with serialization.
+        ///  provide a method to deep clone with JsonConvert.
         /// </summary>
         /// <typeparam name="T">the type of the instance which you want to deep clone</typeparam>
         /// <param name="model">the instance which you want to deep clone</param>
         /// <returns></returns>
-        public T CloneBySerialization<T>(T model) where T : class
+        public T CloneByJsonConvert<T>(T model) where T : class
         {
             try
             {
@@ -86,7 +93,25 @@ namespace DeepClone.cs
             }
         }
 
-
+        /// <summary>
+        /// provide a method to deep clone with XmlSerialize.
+        /// </summary>
+        /// <typeparam name="T">the type of the instance which you want to deep clone</typeparam>
+        /// <param name="model">the instance which you want to deep clone</param>
+        /// <returns></returns>
+        public T CloneByXmlSerialize<T>(T model) where T : class
+        {
+            object retval;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                XmlSerializer xml = new XmlSerializer(typeof(List<T>));
+                xml.Serialize(ms, model);
+                ms.Seek(0, SeekOrigin.Begin);
+                retval = xml.Deserialize(ms);
+                ms.Close();
+            }
+            return (T)retval;
+        }
 
         public T CloneByExpression<T>(Expression<Action<T>> model) where T : class
         {
