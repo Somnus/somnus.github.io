@@ -42,6 +42,14 @@ namespace FXY_NetCore_DbContext
                     IModel model,
                     MigrationCommandListBuilder builder)
         {
+            //ColumnDefinition(operation.Schema, operation.Table, operation.Name, operation.ClrType, operation.ColumnType, operation.IsUnicode, operation.MaxLength, operation.IsRowVersion, operation.IsNullable, operation.DefaultValue, operation.DefaultValueSql, operation.ComputedColumnSql, operation.Table, model, builder);
+            //ColumnDefinition(
+            //    operation.Schema,
+            //    operation.Table,
+            //    operation.Name,
+            //    operation,
+            //    model,
+            //    builder)
             base.ColumnDefinition(operation, model, builder);
             builder.Append(" COMMENT 'NIHAO' ");
         }
