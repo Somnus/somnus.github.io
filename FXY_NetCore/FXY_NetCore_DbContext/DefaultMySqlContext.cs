@@ -1,4 +1,5 @@
 ﻿using FXY_NetCore_DbEntity;
+using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
@@ -13,12 +14,11 @@ namespace FXY_NetCore_DbContext
     {
         public DefaultMySqlContext(DbContextOptions<DefaultMySqlContext> options) : base(options)
         {
-
         }
         protected override void OnConfiguring(DbContextOptionsBuilder dbContextOptionsBuilder)
         {
             dbContextOptionsBuilder
-                .UseMySql("Server=47.106.241.221;Port=3306;Database=test;User=root;Password=root;sslmode=none;")
+                .UseMySql("Server=127.0.0.1;Port=3306;Database=test;User=root;Password=root;sslmode=none;")
                 .ReplaceService<MyMigrationsSqlGenerator, MyMigrationsSqlGenerator>();
         }
 
@@ -37,25 +37,22 @@ namespace FXY_NetCore_DbContext
 
 
 
-        protected override void ColumnDefinition(
-                    AddColumnOperation operation,
-                    IModel model,
-                    MigrationCommandListBuilder builder)
+        //protected override void ColumnDefinition(
+        //            AddColumnOperation operation,
+        //            IModel model,
+        //            MigrationCommandListBuilder builder)
+        //{
+
+        //    base.ColumnDefinition(operation, model, builder);
+        //    builder.Append(" COMMENT 'NIHAO' ");
+        //}
+
+
+        protected override void Generate(AddColumnOperation operation, IModel model, MigrationCommandListBuilder builder)
         {
-            //ColumnDefinition(operation.Schema, operation.Table, operation.Name, operation.ClrType, operation.ColumnType, operation.IsUnicode, operation.MaxLength, operation.IsRowVersion, operation.IsNullable, operation.DefaultValue, operation.DefaultValueSql, operation.ComputedColumnSql, operation.Table, model, builder);
-            //ColumnDefinition(
-            //    operation.Schema,
-            //    operation.Table,
-            //    operation.Name,
-            //    operation,
-            //    model,
-            //    builder)
-            base.ColumnDefinition(operation, model, builder);
-            builder.Append(" COMMENT 'NIHAO' ");
+            base.Generate(operation, model, builder);
+            builder.Append(" COMMENT 'HELLO' ");
         }
-
-
-
 
         //protected override void ColumnDefinition(
         //    string schema,

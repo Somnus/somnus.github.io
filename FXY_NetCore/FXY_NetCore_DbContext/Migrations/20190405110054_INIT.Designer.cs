@@ -8,8 +8,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FXY_NetCore_DbContext.Migrations
 {
     [DbContext(typeof(DefaultMySqlContext))]
-    [Migration("20190405084439_init")]
-    partial class init
+    [Migration("20190405110054_INIT")]
+    partial class INIT
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

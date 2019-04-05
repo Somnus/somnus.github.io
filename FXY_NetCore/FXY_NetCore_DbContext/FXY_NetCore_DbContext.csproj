@@ -27,6 +27,8 @@
     <Compile Remove="Migrations\20190405081214_init.Designer.cs" />
     <Compile Remove="Migrations\20190405081521_init.cs" />
     <Compile Remove="Migrations\20190405081521_init.Designer.cs" />
+    <Compile Remove="Migrations\20190405084439_init.cs" />
+    <Compile Remove="Migrations\20190405102348_init.cs" />
   </ItemGroup>
 
   <ItemGroup>
