@@ -2,18 +2,20 @@
 using FXY_NetCore_DbContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace FXY_NetCore_DbContext.Migrtion.MySqlMigrations
+namespace FXY_NetCore_DbContext.Migrations
 {
     [DbContext(typeof(DefaultMySqlContext))]
-    partial class DefaultMySqlContextModelSnapshot : ModelSnapshot
+    [Migration("20190405084439_init")]
+    partial class init
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.2.0-rtm-35687")
+                .HasAnnotation("ProductVersion", "2.1.8-servicing-32085")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("FXY_NetCore_DbEntity.Student", b =>

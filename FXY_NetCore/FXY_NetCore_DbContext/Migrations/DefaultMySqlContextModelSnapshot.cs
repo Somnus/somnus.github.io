@@ -2,20 +2,18 @@
 using FXY_NetCore_DbContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace FXY_NetCore_DbContext.Migrtion.MySqlMigrations
+namespace FXY_NetCore_DbContext.Migrations
 {
     [DbContext(typeof(DefaultMySqlContext))]
-    [Migration("20190322163146_1")]
-    partial class _1
+    partial class DefaultMySqlContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.2.0-rtm-35687")
+                .HasAnnotation("ProductVersion", "2.1.8-servicing-32085")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("FXY_NetCore_DbEntity.Student", b =>
@@ -30,6 +28,20 @@ namespace FXY_NetCore_DbContext.Migrtion.MySqlMigrations
                     b.HasKey("UUID");
 
                     b.ToTable("Students");
+                });
+
+            modelBuilder.Entity("FXY_NetCore_DbEntity.Teacher", b =>
+                {
+                    b.Property<string>("UUID")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("BirthPlace");
+
+                    b.Property<string>("Name");
+
+                    b.HasKey("UUID");
+
+                    b.ToTable("Teachers");
                 });
 #pragma warning restore 612, 618
         }

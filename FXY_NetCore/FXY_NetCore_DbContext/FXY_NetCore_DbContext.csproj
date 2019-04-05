@@ -5,6 +5,31 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20190405061604_init.cs" />
+    <Compile Remove="Migrations\20190405061604_init.Designer.cs" />
+    <Compile Remove="Migrations\20190405071059_init1.cs" />
+    <Compile Remove="Migrations\20190405071059_init1.Designer.cs" />
+    <Compile Remove="Migrations\20190405071129_init.cs" />
+    <Compile Remove="Migrations\20190405071129_init.Designer.cs" />
+    <Compile Remove="Migrations\20190405071229_init.cs" />
+    <Compile Remove="Migrations\20190405071229_init.Designer.cs" />
+    <Compile Remove="Migrations\20190405071645_init.cs" />
+    <Compile Remove="Migrations\20190405071645_init.Designer.cs" />
+    <Compile Remove="Migrations\20190405071744_init.cs" />
+    <Compile Remove="Migrations\20190405071744_init.Designer.cs" />
+    <Compile Remove="Migrations\20190405072213_init.cs" />
+    <Compile Remove="Migrations\20190405072213_init.Designer.cs" />
+    <Compile Remove="Migrations\20190405074037_init.cs" />
+    <Compile Remove="Migrations\20190405074037_init.Designer.cs" />
+    <Compile Remove="Migrations\20190405081042_init.cs" />
+    <Compile Remove="Migrations\20190405081042_init.Designer.cs" />
+    <Compile Remove="Migrations\20190405081214_init.cs" />
+    <Compile Remove="Migrations\20190405081214_init.Designer.cs" />
+    <Compile Remove="Migrations\20190405081521_init.cs" />
+    <Compile Remove="Migrations\20190405081521_init.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.0" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.1.0" />
   </ItemGroup>
