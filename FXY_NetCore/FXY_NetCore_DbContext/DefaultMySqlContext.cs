@@ -11,15 +11,22 @@ namespace FXY_NetCore_DbContext
 {
     public class DefaultMySqlContext : DbContext
     {
+        private static string mysqlConStr = "Server=47.106.241.221;Port=3306;Database=test;User=root;Password=root;sslmode=none;";
+        public DefaultMySqlContext()
+        {
+
+        }
+        public DefaultMySqlContext(DbContextOptions options) : base(options)
+        {
+
+        }
         public DefaultMySqlContext(DbContextOptions<DefaultMySqlContext> options) : base(options)
         {
 
         }
         protected override void OnConfiguring(DbContextOptionsBuilder dbContextOptionsBuilder)
         {
-            dbContextOptionsBuilder
-                .UseMySql("Server=47.106.241.221;Port=3306;Database=test;User=root;Password=root;sslmode=none;")
-                .ReplaceService<MyMigrationsSqlGenerator, MyMigrationsSqlGenerator>();
+            dbContextOptionsBuilder/*.UseMySql(mysqlConStr)*/.ReplaceService<IMigrationsSqlGenerator, MyMigrationsSqlGenerator>();
         }
 
         public DbSet<Student> Students { get; set; }
@@ -42,14 +49,6 @@ namespace FXY_NetCore_DbContext
                     IModel model,
                     MigrationCommandListBuilder builder)
         {
-            //ColumnDefinition(operation.Schema, operation.Table, operation.Name, operation.ClrType, operation.ColumnType, operation.IsUnicode, operation.MaxLength, operation.IsRowVersion, operation.IsNullable, operation.DefaultValue, operation.DefaultValueSql, operation.ComputedColumnSql, operation.Table, model, builder);
-            //ColumnDefinition(
-            //    operation.Schema,
-            //    operation.Table,
-            //    operation.Name,
-            //    operation,
-            //    model,
-            //    builder)
             base.ColumnDefinition(operation, model, builder);
             builder.Append(" COMMENT 'NIHAO' ");
         }
